@@ -1,0 +1,66 @@
+ *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .btnnav{
+            border-radius: 10%;
+            margin-left: 10px;
+            height: 30px;
+            width: 130px;
+            color: rgb(46, 29, 204);
+        }
+
+        .btnnav:hover{
+            background-color: rgb(9, 9, 49);
+            color: aliceblue;
+        }
+
+        .btnfooter{
+            margin-left: 10px;
+            height: 50px;
+            width: 150px;
+            background-color: rgba(40, 24, 111, 0.000000000001);
+            color: white;
+            border: 0px solid rgba(170, 32, 136, 0.459);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            gap:10px
+        }
+
+        .btnfooter:hover{
+            background-color: white;
+            color: rgb(42, 168, 99);
+        }
+        a{
+            text-decoration: none;
+        }
+
+        .card{
+            border: 1px blue solid;
+            color: white;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* o @media serve para alterar as propriedades das tags com base no tamnho do dispositivo
+        para garantir a responsividade do site, temos que verificar como fica a estilização 
+        em varios tamnhos de telas diferentes, pode ser que no computador fique ok, porem quando acessado
+        pelo celular o site quebre. Nesse caso será necessário aplicar ajustes no tamanho de tela com 
+        o @media() 
+        
+        * Usamos o !important para forçar a estilização em uma tag, como a tag pode ter id e varias classes
+        o html e css precisam saber qual estilo aplicar, forçamos isso usando o !important no final do atributo
+
+        */
+        @media(max-width:750px){
+            button{
+                width: 50px!important;
+                height: 30px!important;
+            }
+        }
